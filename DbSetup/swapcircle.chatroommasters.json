@@ -1,0 +1,72 @@
+[{
+  "_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "name": "smit, Dharati",
+  "creator_id": {
+    "$oid": "670f492931cccfc946b1d1ae"
+  },
+  "members_id": [
+    {
+      "$oid": "670f492931cccfc946b1d1ae"
+    },
+    {
+      "$oid": "670f475447d4ccd1988c62b2"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-16T05:09:29.023Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-16T05:09:29.023Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711dddf0b018b56bf3d9fd0"
+  },
+  "name": "Dharati, Senil",
+  "creator_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "members_id": [
+    {
+      "$oid": "670f475447d4ccd1988c62b2"
+    },
+    {
+      "$oid": "670f5a6e47d4ccd1988c63ee"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T04:02:39.736Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T04:02:39.736Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "name": "Harshil, Dharati",
+  "creator_id": {
+    "$oid": "670f6db347d4ccd1988c64db"
+  },
+  "members_id": [
+    {
+      "$oid": "670f6db347d4ccd1988c64db"
+    },
+    {
+      "$oid": "670f475447d4ccd1988c62b2"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T05:11:21.550Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T05:11:21.550Z"
+  },
+  "__v": 0
+}]

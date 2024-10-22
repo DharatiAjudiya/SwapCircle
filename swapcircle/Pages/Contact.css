@@ -1,0 +1,200 @@
+.contact-container {
+  background-color: #f8f9fa;
+  padding: 0;
+  margin-bottom: 8rem;
+}
+
+.contact-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.discount-section {
+  background-image: url("https://via.placeholder.com/600x800/000000/E6BE8A?text="); /* Placeholder image */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  text-align: left;
+  padding: 0px 50px;
+  color: #ffffff; /* White text color for better readability */
+}
+
+.discount-section .contact-content {
+  width: 100%;
+}
+
+.discount-section .contact-content svg {
+  margin: 0 3rem 0 0;
+}
+
+.discount-content {
+  width: 100%;
+}
+
+.discount-content h2 {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.discount-content h3 {
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.discount-content p {
+  text-align: left;
+  font-size: 1.25rem;
+}
+
+.contact-section {
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.contact-box {
+  max-width: 100%;
+  /* margin: auto; */
+}
+
+.contact-box input,
+.contact-box button {
+  margin-bottom: 1rem;
+  border-radius: 0%;
+}
+
+.contact-box h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.social-icons button {
+  margin-right: 10px;
+  padding: 0;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #000;
+}
+
+.social-icons button svg {
+  margin: 0;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 2rem;
+  gap: 3rem;
+}
+
+.check-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-column label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.custom-input {
+  border: none;
+  border-bottom: 2px solid #ced4da;
+  border-radius: 0;
+  padding-left: 0;
+  margin-bottom: 0.5rem;
+}
+
+.custom-input:focus {
+  box-shadow: none;
+  border-bottom: 2px solid #000;
+}
+
+.form-column .invalid-feedback {
+  display: block;
+  margin-top: -0.5rem;
+}
+
+/* Custom styles for radio buttons */
+.custom-radio .form-check-input {
+  appearance: none;
+  background-color: #e0e0e0; /* Light gray background for unselected radio buttons */
+  border: 1px solid #e0e0e0;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Style when the radio button is selected */
+.custom-radio .form-check-input:checked[type="radio"] {
+  background-color: #000;
+  border-color: #000;
+  --bs-form-check-bg-image: none;
+}
+
+/* Add a checkmark inside the selected radio button */
+.custom-radio .form-check-input:checked::before {
+  content: "✔";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+/* Adjust label positioning and remove any unnecessary styles */
+.custom-radio .form-check-label {
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+  color: #000;
+}
+
+.form-column .invalid-feedback {
+  margin-top: auto;
+}
+
+@media (max-width: 767px) {
+  .form-row {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .check-row {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5rem;
+  }
+}

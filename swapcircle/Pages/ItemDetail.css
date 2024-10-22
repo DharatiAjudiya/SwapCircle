@@ -1,0 +1,173 @@
+/* ItemDetail.css */
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+
+.card-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.main-image-carousel .carousel-item img {
+  height: 400px; /* Adjust the height as needed */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+.main-image-carousel .carousel-item {
+  height: 400px; /* Adjust the height as needed */
+  object-fit: contain; /* Maintain aspect ratio */
+  background-color: transparent;
+  /* background-color: rgb(var(--color-primary)); */
+}
+
+/* Carousel Slider Button and Indicator */
+.main-image-carousel .carousel-control-prev .carousel-control-prev-icon,
+.main-image-carousel .carousel-control-next .carousel-control-next-icon {
+  color: rgb(var(--color-black));
+  border-radius: 40%; /* Make the button rounded */
+  background-color: rgb(var(--color-black));
+  font-weight: bold;
+}
+
+/* Scrollable Thumbnail Images Container */
+.thumbnail-container {
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px 0;
+  height: 400px; /* Set a fixed height for the container */
+}
+
+.thumbnail-scroll {
+  display: flex;
+  direction: rtl; /* Switch the direction to right-to-left */
+  flex-direction: column;
+  align-items: center; /* Center align thumbnails */
+  border-radius: 0;
+}
+
+.thumbnail-scroll .img-thumbnail {
+  cursor: pointer;
+  margin-bottom: 10px; /* Space between thumbnails */
+  padding: 0;
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Keep height and width the same for a square thumbnail */
+  object-fit: cover; /* Maintain aspect ratio */
+  border: 5px solid transparent; /* Default border */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+  border-radius: 0;
+}
+
+.thumbnail-scroll .img-thumbnail-selected {
+  border-color: rgb(var(--color-black));
+}
+
+.detail-wishlist-btn {
+  background-color: rgb(var(--color-primary));
+  color: rgb(var(--color-black));
+  min-width: 0;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 13%;
+}
+
+.chat-btn {
+  width: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-transform: uppercase;
+  font-size: larger;
+  color: rgb(var(--color-primary));
+  background-color: rgb(var(--color-black));
+  box-shadow: 0 4px 6px rgba(var(--color-black), 0.1);
+  border: none; /* Remove border */
+  border-radius: 50px;
+  /* padding: 0.5rem 0; */
+  transition: background-color 0.3s;
+}
+
+.chat-btn:hover,
+.chat-btn:active,
+.chat-btn:focus-visible {
+  background-color: rgb(var(--color-black)) !important;
+  color: rgb(var(--color-primary)) !important;
+}
+
+.view-profile-btn {
+  box-shadow: 0 4px 6px rgba(var(--color-black), 0.1);
+  background-color: rgb(var(--color-primary));
+  border: none; /* Remove border */
+  color: rgb(71, 157, 255);
+  transition: background-color 0.3s;
+}
+
+.view-profile-btn:hover {
+  color: rgb(var(--color-primary));
+  background-color: rgb(71, 157, 255);
+}
+
+.share-btn {
+  box-shadow: 0 4px 6px rgba(var(--color-black), 0.1);
+  border-radius: 50%; /* Make the button rounded */
+  padding: 10px; /* Adjust padding as needed */
+  background-color: rgb(var(--color-primary));
+  color: rgb(71, 157, 255);
+  border: none; /* Remove border */
+  transition: background-color 0.3s;
+}
+
+.share-btn:hover {
+  color: rgb(var(--color-primary));
+  background-color: rgb(71, 157, 255);
+}
+
+/* 4. Chat with Seller Button with Icon */
+.chat-btn {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.indicator-btn {
+  border-radius: 50% !important;
+  background-color: #fff !important;
+  border: none !important;
+  color: #000 !important;
+  padding: 0.5rem !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s, color 0.3s !important;
+
+  &:hover {
+    background-color: transparent !important;
+    color: #000 !important;
+  }
+
+  &:active {
+    background-color: transparent !important;
+    color: #000 !important;
+  }
+
+  &:disabled {
+    background-color: transparent !important;
+    color: #999 !important;
+    cursor: not-allowed !important;
+  }
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 400px; /* Adjust as needed */
+  border: 1px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+.image-placeholder h4 {
+  color: #6c757d;
+}

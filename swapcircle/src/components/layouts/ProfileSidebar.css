@@ -1,0 +1,59 @@
+.edit-profile-btn {
+  border-radius: 0;
+  padding: 6px 40px;
+  font-weight: 500;
+}
+
+.stats-display {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+}
+
+.stat-title {
+  font-weight: bold;
+}
+
+.points-title {
+  color: #b3b300; /* Yellow color for 'points' */
+}
+
+.badge-title {
+  color: #808080; /* Gray color for 'badge' */
+}
+
+.level-title {
+  color: #ff9933; /* Orange color for 'level' */
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.points-value {
+  color: #b3b300; /* Yellow color for value */
+}
+
+.badge-value {
+  color: #808080; /* Gray color for value */
+}
+
+.level-value {
+  color: #ff9933; /* Orange color for value */
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 24px;
+}

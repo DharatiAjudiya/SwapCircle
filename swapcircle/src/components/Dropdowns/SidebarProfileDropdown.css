@@ -1,0 +1,54 @@
+.sidebar-profile-dropdown-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  z-index: 1050; /* Ensure this value is higher than any overlapping component */
+}
+
+.sidebar-profile-dropdown .dropdown-menu {
+  /* background-color: rgb(var(--color-black)); Adjust to match your theme */
+  z-index: 1060; /* Ensure this is higher than the container's z-index */
+}
+
+.sidebar-profile-dropdown .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -10px;
+  left: 45px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgb(var(--color-primary)); /* Light background for dropdown arrow */
+  z-index: 26090; /* Ensure this value is higher than any overlapping component */
+}
+
+.sidebar-profile-dropdown .dropdown-header {
+  /* background-color: rgb(var(--color-black)); /* Same as above */
+  /* border-bottom: 1px solid rgb(var(--color-primary));*/
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+}
+
+.sidebar-profile-dropdown .dropdown-header span {
+  color: rgb(
+    var(--color-primary)
+  ); /* Ensure text color is appropriate for dark background */
+}
+
+.sidebar-profile-dropdown {
+  position: absolute;
+  right: 40px;
+  top: 0px;
+  transform-origin: top right;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: 1070; /* Ensure this is higher than the menu's z-index */
+}
+
+/* Hide the dropdown arrow */
+.custom-dropdown::after {
+  display: none;
+}

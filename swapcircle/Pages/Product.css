@@ -1,0 +1,192 @@
+.filters {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  position: sticky;
+  top: 180px;
+  z-index: 11;
+}
+
+.filters .filter-options {
+  margin-top: 10px;
+}
+
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+}
+
+.product-card .wishlist-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.sorting-row {
+  background-color: #f6f6f6;
+  border: 1px solid rgb(202, 196, 196, 0.3);
+  position: sticky;
+  top: 122px;
+  z-index: 12;
+}
+
+.filter-header {
+  background-color: #f6f6f6;
+  border: 1px solid rgb(202, 196, 196, 0.3);
+  padding: 15px 10px;
+}
+
+.sorting-option {
+  /* margin-left: 10px; */
+  color: rgb(var(--color-black));
+  cursor: pointer;
+}
+
+.sorting-option.active {
+  font-weight: bold;
+}
+
+.sorting-option:hover {
+  color: rgb(var(--color-black));
+  text-decoration: underline;
+}
+
+.pagination-btn {
+  border-radius: 0;
+  padding: 6px 40px;
+  font-weight: 500;
+}
+
+.indicator-btn {
+  border-radius: 50% !important;
+  background-color: #fff !important;
+  border: none !important;
+  color: #000 !important;
+  padding: 0.5rem !important;
+  transition: background-color 0.3s, color 0.3s !important;
+
+  &:hover {
+    background-color: transparent !important;
+    color: #000 !important;
+  }
+
+  &:active {
+    background-color: transparent !important;
+    color: #000 !important;
+  }
+
+  &:disabled {
+    background-color: transparent !important;
+    color: #999 !important;
+    cursor: not-allowed !important;
+  }
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.form-control,
+.form-select,
+.submit-btn {
+  margin-bottom: 1rem !important;
+  border-radius: 0% !important;
+}
+
+.submit-btn,
+.submit-btn:is(:hover, :active, :focus, :focus-visible) {
+  background-color: rgb(var(--color-black)) !important;
+}
+/* Style the select options on hover */
+.form-select option:is(:hover, :focus, :active) {
+  background-color: black !important; /* Background color on hover */
+  color: white !important; /* Text color on hover */
+}
+
+.geocoder-container .geoapify-autocomplete-input {
+  width: 100% !important;
+  padding: 0 2.5rem;
+}
+
+.autocomplete-container {
+  z-index: 1000; /* Ensures that the autocomplete suggestions appear above the map */
+  position: relative;
+}
+
+.autocomplete-container .geoapify-autocomplete-list {
+  z-index: 1001; /* Ensures that the suggestions list appears on top */
+  position: relative;
+}
+
+.invalid-message {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: var(--bs-form-invalid-color);
+}
+
+.map-container {
+  height: 47vh;
+  width: 51vw;
+}
+
+.location-modal {
+  width: 55vw;
+}
+
+.p-dialog-content {
+  padding: 0 1rem;
+}
+
+.p-dialog-header {
+  padding: 0.2rem 0.5rem;
+}
+
+.radio-group-container {
+  display: flex;
+  align-items: center;
+}
+
+.sort-label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.radio-button {
+  border: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.radio-button:hover {
+  text-decoration: underline;
+}
+
+.radio-button.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Custom styles for offcanvas on mobile view */
+@media (max-width: 768px) {
+  .location-modal {
+    width: 88vw;
+  }
+
+  .map-container {
+    height: 40vh;
+    width: 80vw;
+  }
+}

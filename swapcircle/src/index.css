@@ -1,0 +1,92 @@
+:root {
+  --color-primary: 255, 255, 255;
+  --color-apple-green: 230, 190, 138;
+  --color-beaver: 255, 214, 184;
+  --color-platinum: 255, 255, 255;
+  --color-jet-grey: 78, 59, 49;
+  --color-black: 38, 38, 38;
+  --color-heading: 239, 239, 239;
+  --font-heading: "Poppins", sans-serif;
+  --font-heading2: "Oswald", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+
+html,
+body {
+  /* height: 100% !important;
+  width: 100% !important; */
+  background-color: rgb(var(--color-primary));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+}
+
+html,
+div,
+span {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--color-black)) transparent;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--color-black));
+    border-radius: 100px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: var(
+      rgb(var(--color-black))
+    ); /* Color when hovering over the thumb */
+  }
+}
+
+.form-control.is-invalid {
+  margin: 0.5rem 0 0 0;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: rgb(var(--color-black));
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  z-index: 22; /* Ensure indicators are on top of everything */
+}
+
+.breadcrumb-item a {
+  /* margin-left: 10px; */
+  color: rgb(var(--color-black));
+  cursor: pointer;
+}
+
+.breadcrumb-item a:hover {
+  color: rgb(var(--color-black));
+  text-decoration: underline;
+}

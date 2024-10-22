@@ -1,0 +1,1044 @@
+----- API DOCUMENTATION OF SWAP CIRCLE -----
+
+1.) LOGIN :-
+    URL               :- http://localhost:3000/login
+    METHOD            :- post
+    AUTHORIZATION     :- none
+    BODY PARAMETERS   :- 1.)email/phone_number, 2.)password
+    RESPONSE         :- (On Error)
+        {
+            success : false(Boolean),
+            message : <Error Message>
+        }
+     RESPONSE         :- (On Success)
+        {
+            success : true(Boolean),
+            message : <success message>
+            result  : <object>(login successfully)
+        }
+
+2.) USER :-
+
+    2.1) CREATE USER:
+     URL              :- http://localhost:3000/users
+     METHOD           :- post
+     AUTHORIZATION    :- none
+     BODY PARAMETERS  :- 1.)username, 2.)email, 3.)password, 4.)phone_number
+     RESPONSE         :- (On Error)
+        {
+            success : false(Boolean),
+            message : <Error Message>
+        }
+     RESPONSE         :- (On Success)
+        {
+            success : true(Boolean),
+            message : <success message>
+            result  : <object>(data of newly added user)
+        }
+
+    2.2) GET USERS:
+     URL              :- http://localhost:3000/users
+     METHOD           :- get
+     AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+     BODY PARAMETERS  :- none
+     RESPONSE         :- (On Error)
+        {
+            success : false(Boolean),
+            message : <Error Message>
+        }
+     RESPONSE         :- (On Success)
+        {
+            success : true(Boolean),
+            message : <success message>
+            result  : <object>(data of all user)
+        }
+
+    2.3) GET SPECEFIC USERS:
+     URL              :- http://localhost:3000/users/:id [id of the user you want to view]
+     METHOD           :- get
+     AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+     BODY PARAMETERS  :- none
+     RESPONSE         :- (On Error)
+        {
+            success : false(Boolean),
+            message : <Error Message>
+        }
+     RESPONSE         :- (On Success)
+        {
+            success : true(Boolean),
+            message : <success message>
+            result  : <object>(data of specefic user)
+        }     
+
+    2.4) UPDATE USERS:
+     URL              :- http://localhost:3000/users/:id [id of the user want to update]
+     METHOD           :- put
+     AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+     BODY PARAMETERS  :- 1.)username, 2.)email, 3.)password, 4.)phone_number, 5.)address,  6.)location
+     RESPONSE         :- (On Error)
+        {
+            success : false(Boolean),
+            message : <Error Message>
+        }
+     RESPONSE         :- (On Success)
+        {
+            success : true(Boolean),
+            message : <success message>
+            result  : <object>(updated data of specefic user)
+        }    
+
+    2.5) DELETE USERS:
+     URL              :- http://localhost:3000/users/:id [id of user to delete]
+     METHOD           :- delete
+     AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+     BODY PARAMETERS  :- none
+     RESPONSE         :- (On Error)
+        {
+            success : false(Boolean),
+            message : <Error Message>
+        }
+     RESPONSE         :- (On Success)
+        {
+            success : true(Boolean),
+            message : <success message>
+            result  : <object>(id of deleted user)
+        }  
+
+    2.6) EDIT PROFILE:
+      URL              :- http://localhost:3000/users/profile/:id [id of the user to update profile]
+      METHOD           :- put
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- 1.)username, 2.)email, 3.)password, 4.)phone_number, 5.)address,  6.)location
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of updated user)
+         } 
+
+    2.7) LEADERBOARD:
+      URL              :- http://localhost:3000/leaderboard
+      METHOD           :- get
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of top 3 users on leaderboard)
+         }
+
+    2.8) VERIFY OTP:
+      URL              :- http://localhost:3000/verifyotp
+      METHOD           :- post
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- 1.)otp 2)secret 3)timestamp
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(user registered successfully)
+         }                      
+
+3.) ROLE :-
+
+    3.1) CREATE ROLE:
+      URL              :- http://localhost:3000/role
+      METHOD           :- post
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- 1.)role, 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of inserted role)
+         }
+
+    3.2) VIEW ROLE:
+      URL              :- http://localhost:3000/role
+      METHOD           :- get
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of all role)
+         }
+
+    3.3) VIEW SPECEFIC ROLE:
+      URL              :- http://localhost:3000/role/:ID [id of the role you want to view]
+      METHOD           :- get
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of specwfic role)
+         }
+
+    3.4) UPDATE ROLE:
+      URL              :- http://localhost:3000/role/:id [id of the role you want to update]
+      METHOD           :- put
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- 1.)role, 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of updated role)
+         }  
+
+    3.5) DELETE ROLE:
+      URL              :- http://localhost:3000/role/:id [id of the role you want to delete]
+      METHOD           :- delete
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(id of deleted role)
+         }      
+
+4.) ITEMS :-
+
+    4.1) ADD ITEMS:
+      URL              :- http://localhost:3000/items
+      METHOD           :- post
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- 1.)category_id 2.)name 3.)description  4.)tags 5.)eco_friendly 6.)recycleable 7.)condition 8.)status 9.)price 10.)selling_status 11.)location 12.)images
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of inserted item)
+         }
+
+    4.2) VIEW ITEMS:
+      URL              :- http://localhost:3000/items
+      METHOD           :- get
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of all items)
+         }  
+
+    4.3) VIEW SPECEFIC ITEM:
+      URL              :- http://localhost:3000/items/:id [id of the item you want to view]
+      METHOD           :- get
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of specefic item)
+         }        
+
+    4.4) UPDATE ITEM:
+      URL              :- http://localhost:3000/items/:id [id of the item you want to update]
+      METHOD           :- put
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- 1.)category_id 2.)name 3.)description  4.)tags 5.)eco_friendly 6.)recycleable 7.)condition 8.)status 9.)price 10.)selling_status 11.)location 12.)images 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of updated item)
+         }
+
+    4.5) DELETE ITEM:
+      URL              :- http://localhost:3000/items/:id [id of the item you want to delete]
+      METHOD           :- delete
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(id of deleted item)
+         }
+
+    4.6) ITEM LISTING BY CATEGORY:
+      URL              :- http://localhost:3000/itemsby/category/:id [id of the category]
+      METHOD           :- get
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of item listed by category)
+         }     
+
+    4.7) ITEMS LISTING:
+      URL              :- http://localhost:3000/itemlisting/:id
+      METHOD           :- post
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- 1.)tags 2.)condition 3.)minPrice 4.)maxPrice 5.)ratings 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of items according to filteration )
+         }
+
+    4.8) ITEM BY LOCATION:
+      URL              :- http://localhost:3000/itemsby/location
+      METHOD           :- post
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- 1.)lat 2.)long 3.)radius 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of item according to location)
+         }          
+
+    4.9) REFER ITEMS TO USER:
+      URL              :- http://localhost:3000/referitem
+      METHOD           :- post
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- 1.)senderId 2.)receiverId 3.)itemId 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(reffer item to other user)
+         } 
+
+    4.10) CATEGORY WISE FILTERING:
+        URL              :- http://localhost:3000/category/sorting/:id [id of the category]
+        METHOD           :- post
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- 1.)filterby 
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(item according to filtering)
+            } 
+
+    4.11) SPECEFIC USER'S ITEM:
+        URL              :- http://localhost:3000/viewuser/items
+        METHOD           :- post
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- none 
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(specefic users items)
+            }
+
+    4.12) LOCATION PREFERENCE ITEMS:
+        URL              :- http://localhost:3000/preferedlocation/item
+        METHOD           :- post
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- 1.)lat 2.)long 3.)name 
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(specefic users items)
+            }
+
+    4.13) AVAILABLE ITEM IN LOCATION notification:
+        URL              :- http://localhost:3000/availitem/inlocation
+        METHOD           :- get
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- none 
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(specefic users items)
+            }   
+
+    4.14) ITEM FILTERING [CATEGORY, LISTING, SORTING, LOCATION]:
+        URL              :- http://localhost:3000/items/filtering/:id [id of the category to filter items]
+        METHOD           :- post
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- filterby ('low to high','high to low','newly added') to sort items
+                            (lat, lng, radius) to filter by location
+                            (tags, condition, minPrice, maxPrice) for item listing
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(filtered items)
+            } 
+
+    4.15) GLOBAL SEARCH:
+        URL              :- http://localhost:3000/globalsearch
+        METHOD           :- post
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- search
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(searched items)
+            } 
+
+    4.16) SIMILAR PRODUCT [ITEM WISE] :
+        URL              :- http://localhost:3000/similaritem/product
+        METHOD           :- get
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- none
+        QUERY PARAMETERS :- 1.)categoryId 2.)itemName
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(related Items)
+            }   
+
+    4.17) CUSTOMERS ALSO LIKE:
+        URL              :- http://localhost:3000/customer/alsoliked/:id [id of the category to filter items]
+        METHOD           :- get
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- none
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(filtered items based on category)
+            }                                                                 
+
+5.) CATEGORY :-
+
+    5.1) ADD CATEGORY:
+      URL              :- http://localhost:3000/category
+      METHOD           :- post
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- 1.)category 2.)status 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of inserted category)
+         }     
+
+    5.2) VIEW ALL CATEGORY:
+      URL              :- http://localhost:3000/category
+      METHOD           :- get
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of all categories)
+         }
+
+    5.3) VIEW SPECEFIC CATEGORY:
+      URL              :- http://localhost:3000/category/:id [id of the specefic category]
+      METHOD           :- get
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of specefic category)
+         }     
+
+    5.4) UPDATE CATEGORY:
+      URL              :- http://localhost:3000/category/:id [id of the category you want to update]
+      METHOD           :- put
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- 1.)category 2.)status 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of updated category)
+         }     
+
+    5.5) DELETE CATEGORY:
+      URL              :- http://localhost:3000/category/:id [id of the category you want to delete]
+      METHOD           :- delete
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(id of deleted data)
+         }     
+
+    5.6) STATUS INACTIVE:
+      URL              :- http://localhost:3000/category/status/:id [id of the category you want to inactive]
+      METHOD           :- put
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- 1.)none 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(category data with updated status)
+         }   
+
+    5.7) SIMILAR PRODUCT :
+        URL              :- http://localhost:3000/similaritem/product/:id [id of the category to filter items]
+        METHOD           :- post
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- none
+        query PARAMETERS :- 1.)categoryId 2.)itemName  
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(category related items)
+            }
+         
+6.) WISHLIST :- 
+
+    6.1) ADD ITEM TO WISHLIST:
+      URL              :- http://localhost:3000/wishlist/:id
+      METHOD           :- post
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of item inserted in wishlist)
+         }
+
+    6.2) VIEW WISHLIST ITEMS:
+      URL              :- http://localhost:3000/wishlist
+      METHOD           :- get
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of the user's wishlist)
+         }     
+
+    6.3) AVAILABLE ITEM OF WISHLIST:
+      URL              :- http://localhost:3000/wishlist/update
+      METHOD           :- get
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(email for available products)
+         }     
+
+    6.4) REMOVE ITEMS FROM WISHLIST:
+      URL              :- http://localhost:3000/wishlist/remove/:id [id of the item you want to remove from wishlist]
+      METHOD           :- delete
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(id of item removed from wishlist)
+         }    
+
+7.) SWAPS
+
+    7.1) MAKE SWAPS:
+      URL              :- http://localhost:3000/swap
+      METHOD           :- post
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- 1.)items 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(data of swaped items)
+         }
+
+    7.2) VIEW SWAPS HISTORY:
+      URL              :- http://localhost:3000/swap
+      METHOD           :- get
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(history of users swaps)
+         }     
+
+    7.3) RATE USER:
+      URL              :- http://localhost:3000/rate/user
+      METHOD           :- post
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- 1.)user_id 2.)rating 3.)description 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(rate each other)
+         } 
+
+    7.4) RECOMMENDED SWAPS:
+      URL              :- http://localhost:3000/recommended/swaps
+      METHOD           :- get
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(recommended swaps for user)
+         }   
+
+8.) CHATROOM :-
+
+    8.1) CREATE CHATROOM:
+        URL              :- http://localhost:3000/chatroom
+        METHOD           :- post
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- 1.)name 2.)creator_id 3.)members_id 
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(newly created chatroom detail)
+            } 
+
+    8.2) VIEW CHATROOM:
+        URL              :- http://localhost:3000/chatroom
+        METHOD           :- get
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- none 
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(data of all chatrooms)
+            }                      
+
+    8.3) VIEW SPECEFIC CHATROOM :-
+        URL              :- http://localhost:3000/chatroom/:id [id of the chatroom you want to view]
+        METHOD           :- get
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- none 
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(specefic chatroom details)
+            }
+
+    8.4) UPDATE CHATROOM:
+        URL              :- http://localhost:3000/chatroom/:id [id of the chatroom you want to update]
+        METHOD           :- put
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- none 
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(updated chatroom details)
+            }   
+
+    8.5) DELETE CHATROOM:
+        URL              :- http://localhost:3000/chatroom/:id [id of the chatroom you want to delete]
+        METHOD           :- delete
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- none 
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(deleted chatroom id)
+            }   
+
+9.) MESSAGES :-
+
+    9.1) INSERT MESSAGES:
+        URL              :- http://localhost:3000/message
+        METHOD           :- post
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- 1.)attachments 2.)sender_id 3.)chatroom_id 
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(newly inserted message detail)
+            } 
+
+    9.2) VIEW MESSAGES:
+        URL              :- http://localhost:3000/message
+        METHOD           :- get
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- none 
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(data of all message)
+            }                      
+
+    9.3) VIEW SPECEFIC MESSAGE :-
+        URL              :- http://localhost:3000/message/:id [id of the message you want to view]
+        METHOD           :- get
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- none 
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(specefic message details)
+            }
+
+    9.4) UPDATE MESSAGE:
+        URL              :- http://localhost:3000/message/:id [id of the message you want to update]
+        METHOD           :- put
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- 1.) attachments, 2.)sender_id, 3.)chatroom_id
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(updated message id)
+            }   
+
+    9.5) DELETE MESSAGE:
+        URL              :- http://localhost:3000/message/:id [id of the message you want to delete]
+        METHOD           :- delete
+        AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+        BODY PARAMETERS  :- none 
+        RESPONSE         :- (On Error)
+            {
+                success : false(Boolean),
+                message : <Error Message>
+            }
+        RESPONSE         :- (On Success)
+            {
+                success : true(Boolean),
+                message : <success message>
+                result  : <object>(deleted message id)
+            }    
+
+10.) SEEDERS :-
+
+    10.1) CATEGORY SEEDER:
+      URL              :- http://localhost:3000/seeder/category
+      METHOD           :- post
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(create 10 fake categories)
+         }
+
+    10.2) USER SEEDER:
+      URL              :- http://localhost:3000/seeder/user
+      METHOD           :- post
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none 
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(inset 10 fake users)
+         }
+
+    10.3) ITEM SEEDER:
+      URL              :- http://localhost:3000/seeder/item
+      METHOD           :- post
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(insert 20 fake items)
+         }
+
+11.) HOME PAGE :-
+
+     11.1) HOME PAGE :
+      URL              :- http://localhost:3000/homepage
+      METHOD           :- get
+      AUTHORIZATION    :- 1.)AUTH TYPE: bearer token     2.)TOKEN: jwt_token
+      BODY PARAMETERS  :- none
+      RESPONSE         :- (On Error)
+         {
+             success : false(Boolean),
+             message : <Error Message>
+         }
+      RESPONSE         :- (On Success)
+         {
+             success : true(Boolean),
+             message : <success message>
+             result  : <object>(details of homepage)
+         }         

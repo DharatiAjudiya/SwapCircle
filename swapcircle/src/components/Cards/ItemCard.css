@@ -1,0 +1,122 @@
+/* Hide the previous and next buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+.item-card-container {
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 300px; /* Set your desired height */
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
+  background-image: url('/images/102.jpg'); /* Add your old letter texture image */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel {
+  height: 100%; /* Set the height of the carousel */
+  opacity: 1; /* Initially fully opaque */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity change */
+  z-index: 1; /* Ensure carousel is below the overlay */
+}
+
+.item-card-container:hover .carousel-image {
+  opacity: 0.5; /* Reduce opacity on hover */
+}
+
+.wishlist-btn {
+  background-color: rgb(var(--color-primary));
+  color: rgb(var(--color-apple-green));
+  min-width: 0;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item-card-container:hover .wishlist-btn {
+  opacity: 1; /* Show on hover */
+  transform: translateY(0) translateX(0); /* Slide up and in */
+}
+
+.wishlist-btn:hover {
+  color: rgb(var(--color-primary));
+  background-color: rgb(var(--color-apple-green));
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88%; /* Cover the entire container */
+  background-color: rgba(var(--color-primary), 0.8); /* Slightly transparent background */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  z-index: 20; /* Ensure overlay is above the carousel */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px; 
+  box-sizing: border-box; /* Include padding in the total height and width */
+}
+
+.item-card-container:hover .overlay {
+  opacity: 0.8; /* Show on hover */
+  visibility: visible; /* Make overlay visible */
+}
+
+.card-details {
+  padding: 10px;
+  text-align: center; /* Center align text */
+  z-index: 21; /* Ensure text is above the overlay */
+}
+
+.item-card-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.item-card-title {
+  color: rgb(var(--color-jet-grey));
+  font-size: 2rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.carousel-inner,.carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  object-fit: cover; /* Ensure images cover the entire area without distortion */
+}

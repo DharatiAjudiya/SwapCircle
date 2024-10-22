@@ -1,0 +1,126 @@
+[{
+  "_id": {
+    "$oid": "6711b2cd0b018b56bf3d9af7"
+  },
+  "user_id": {
+    "$oid": "670f492931cccfc946b1d1ae"
+  },
+  "item_id": {
+    "$oid": "670f6e9247d4ccd1988c64f8"
+  },
+  "createdAt": {
+    "$date": "2024-10-18T00:58:53.215Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T00:58:53.215Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711b2cf0b018b56bf3d9afd"
+  },
+  "user_id": {
+    "$oid": "670f492931cccfc946b1d1ae"
+  },
+  "item_id": {
+    "$oid": "670f6f8547d4ccd1988c6510"
+  },
+  "createdAt": {
+    "$date": "2024-10-18T00:58:55.160Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T00:58:55.160Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711b2d60b018b56bf3d9b03"
+  },
+  "user_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "item_id": {
+    "$oid": "670f60d747d4ccd1988c6442"
+  },
+  "createdAt": {
+    "$date": "2024-10-18T00:59:02.677Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T00:59:02.677Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711b2d80b018b56bf3d9b09"
+  },
+  "user_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "item_id": {
+    "$oid": "670f611f47d4ccd1988c644a"
+  },
+  "createdAt": {
+    "$date": "2024-10-18T00:59:04.227Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T00:59:04.227Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711e22b9d688e6d40306f6f"
+  },
+  "user_id": {
+    "$oid": "670f6db347d4ccd1988c64db"
+  },
+  "item_id": {
+    "$oid": "670f3e7e47d4ccd1988c6266"
+  },
+  "createdAt": {
+    "$date": "2024-10-18T04:20:59.587Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T04:20:59.587Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711e2369d688e6d40306f7f"
+  },
+  "user_id": {
+    "$oid": "670f6db347d4ccd1988c64db"
+  },
+  "item_id": {
+    "$oid": "670f6ba847d4ccd1988c64a8"
+  },
+  "createdAt": {
+    "$date": "2024-10-18T04:21:10.071Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T04:21:10.071Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6712f72f920a59279c85d81a"
+  },
+  "user_id": {
+    "$oid": "670f6db347d4ccd1988c64db"
+  },
+  "item_id": {
+    "$oid": "6711c34b0b018b56bf3d9d6f"
+  },
+  "createdAt": {
+    "$date": "2024-10-19T00:02:55.008Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-19T00:02:55.008Z"
+  },
+  "__v": 0
+}]
