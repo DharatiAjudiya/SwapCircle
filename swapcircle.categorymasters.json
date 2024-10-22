@@ -1,0 +1,105 @@
+[{
+  "_id": {
+    "$oid": "66ebc0b8fbde481b60329f56"
+  },
+  "category": "Furniture",
+  "status": "Unavailable",
+  "createdAt": {
+    "$date": "2024-09-18T07:10:11.494Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T07:10:11.494Z"
+  },
+  "__v": 0,
+  "image": "furnitures.png"
+},
+{
+  "_id": {
+    "$oid": "66ebc0b8fbde481b60329f60"
+  },
+  "category": "Books",
+  "status": "Unavailable",
+  "createdAt": {
+    "$date": "2024-09-18T07:10:11.505Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T07:10:11.505Z"
+  },
+  "__v": 0,
+  "image": "books.png"
+},
+{
+  "_id": {
+    "$oid": "66ebc0b8fbde481b60329f54"
+  },
+  "category": "Beauty & Personal Care",
+  "status": "Unavailable",
+  "createdAt": {
+    "$date": "2024-09-18T07:10:11.492Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T07:10:11.492Z"
+  },
+  "__v": 0,
+  "image": "beauty-selfcare.png"
+},
+{
+  "_id": {
+    "$oid": "66ebc0b8fbde481b60329f58"
+  },
+  "category": "Toys & Games",
+  "status": "Available",
+  "createdAt": {
+    "$date": "2024-09-18T07:10:11.496Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T07:10:11.496Z"
+  },
+  "__v": 0,
+  "image": "games-toys.png"
+},
+{
+  "_id": {
+    "$oid": "66ebc0b8fbde481b60329f5c"
+  },
+  "category": "Electronics",
+  "status": "Unavailable",
+  "createdAt": {
+    "$date": "2024-09-18T07:10:11.500Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T07:10:11.500Z"
+  },
+  "__v": 0,
+  "image": "electronics-gadgets.png"
+},
+{
+  "_id": {
+    "$oid": "66ebc0b8fbde481b60329f5a"
+  },
+  "category": "Home & Kitchen",
+  "status": "Unavailable",
+  "createdAt": {
+    "$date": "2024-09-18T07:10:11.497Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T07:10:11.497Z"
+  },
+  "__v": 0,
+  "image": "home-kitchen.png"
+},
+{
+  "_id": {
+    "$oid": "66ebc0b8fbde481b60329f5e"
+  },
+  "category": "Clothing & Accessories",
+  "status": "Available",
+  "createdAt": {
+    "$date": "2024-09-18T07:10:11.503Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T07:10:11.503Z"
+  },
+  "__v": 0,
+  "image": "clothes-accessories.png"
+}]

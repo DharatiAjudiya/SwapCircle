@@ -1,0 +1,975 @@
+[{
+  "_id": {
+    "$oid": "670f4a8931cccfc946b1d233"
+  },
+  "content": "I'm really interested in your item and would love to discuss a possible barter if you're open to it!",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f492931cccfc946b1d1ae"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [
+    {
+      "$oid": "670f445f47d4ccd1988c6286"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-16T05:09:29.259Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-16T05:09:29.259Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670f4aa331cccfc946b1d24d"
+  },
+  "content": "hello",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f492931cccfc946b1d1ae"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [],
+  "createdAt": {
+    "$date": "2024-10-16T05:09:55.603Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-16T05:09:55.603Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670f4ab047d4ccd1988c6314"
+  },
+  "content": "hii",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [],
+  "createdAt": {
+    "$date": "2024-10-16T05:10:08.148Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-16T05:10:08.148Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670f4ac347d4ccd1988c631a"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3e0147d4ccd1988c625e"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-16T05:10:27.862Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-16T05:10:27.862Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670f4ad331cccfc946b1d29f"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f492931cccfc946b1d1ae"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3e0147d4ccd1988c625e"
+    },
+    {
+      "$oid": "670f4a0331cccfc946b1d1fa"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-16T05:10:43.286Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-16T05:10:58.166Z"
+  },
+  "__v": 0,
+  "proposal_status": "sold"
+},
+{
+  "_id": {
+    "$oid": "6711b55a0b018b56bf3d9b37"
+  },
+  "content": "I'm really interested in your item and would love to discuss a possible barter if you're open to it!",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [
+    {
+      "$oid": "670f577947d4ccd1988c63b1"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T01:09:46.885Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T01:09:46.885Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711b5ba0b018b56bf3d9b67"
+  },
+  "content": "Hi",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f492931cccfc946b1d1ae"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [],
+  "createdAt": {
+    "$date": "2024-10-18T01:11:22.774Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T01:11:22.774Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711b5cf0b018b56bf3d9b69"
+  },
+  "content": "I have following products",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [],
+  "createdAt": {
+    "$date": "2024-10-18T01:11:43.729Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T01:11:43.729Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711b7d30b018b56bf3d9b6f"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3d7c47d4ccd1988c6256"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T01:20:19.664Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T01:20:19.664Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711b7db0b018b56bf3d9b75"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3e7e47d4ccd1988c6266"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T01:20:27.077Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T01:20:27.077Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711b7f60b018b56bf3d9b7b"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f492931cccfc946b1d1ae"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3d7c47d4ccd1988c6256"
+    },
+    {
+      "$oid": "670f573247d4ccd1988c63a9"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T01:20:54.514Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T01:21:06.704Z"
+  },
+  "__v": 0,
+  "proposal_status": "deny"
+},
+{
+  "_id": {
+    "$oid": "6711c37f0b018b56bf3d9d8b"
+  },
+  "content": "I'm really interested in your item and would love to discuss a possible barter if you're open to it!",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [
+    {
+      "$oid": "670f583d47d4ccd1988c63cc"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T02:10:07.649Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T02:10:07.649Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711c39a0b018b56bf3d9db9"
+  },
+  "content": "Hi Its available",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f492931cccfc946b1d1ae"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [],
+  "createdAt": {
+    "$date": "2024-10-18T02:10:34.889Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T02:10:34.889Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711c3b20b018b56bf3d9dbf"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3d7c47d4ccd1988c6256"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T02:10:58.282Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T02:10:58.282Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711c3bf0b018b56bf3d9dc5"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f492931cccfc946b1d1ae"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3d7c47d4ccd1988c6256"
+    },
+    {
+      "$oid": "670f573247d4ccd1988c63a9"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T02:11:11.820Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T02:12:00.188Z"
+  },
+  "__v": 0,
+  "proposal_status": "sold"
+},
+{
+  "_id": {
+    "$oid": "6711c3e30b018b56bf3d9dc7"
+  },
+  "content": "Can you please share address for pickup",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [],
+  "createdAt": {
+    "$date": "2024-10-18T02:11:47.781Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T02:11:47.781Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711d98b0b018b56bf3d9ec7"
+  },
+  "content": "I'm really interested in your item and would love to discuss a possible barter if you're open to it!",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [
+    {
+      "$oid": "670f583d47d4ccd1988c63cc"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T03:44:11.050Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T03:44:11.050Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711d9b80b018b56bf3d9f0d"
+  },
+  "content": "hi",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f492931cccfc946b1d1ae"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [],
+  "createdAt": {
+    "$date": "2024-10-18T03:44:56.662Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T03:44:56.662Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711d9cd0b018b56bf3d9f13"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3cf047d4ccd1988c624e"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T03:45:17.658Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T03:45:17.658Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711d9e40b018b56bf3d9f19"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f492931cccfc946b1d1ae"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3cf047d4ccd1988c624e"
+    },
+    {
+      "$oid": "670f583d47d4ccd1988c63cc"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T03:45:40.068Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T03:46:27.020Z"
+  },
+  "__v": 0,
+  "proposal_status": "sold"
+},
+{
+  "_id": {
+    "$oid": "6711da040b018b56bf3d9f1b"
+  },
+  "content": "adress for pickup",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "670f4a8931cccfc946b1d22f"
+  },
+  "item_id": [],
+  "createdAt": {
+    "$date": "2024-10-18T03:46:12.062Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T03:46:12.062Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711dddf0b018b56bf3d9fd4"
+  },
+  "content": "I'm really interested in your item and would love to discuss a possible barter if you're open to it!",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "6711dddf0b018b56bf3d9fd0"
+  },
+  "item_id": [
+    {
+      "$oid": "670f60d747d4ccd1988c6442"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T04:02:39.990Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T04:02:39.990Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711edf99d688e6d40306fbe"
+  },
+  "content": "I'm really interested in your item and would love to discuss a possible barter if you're open to it!",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f6db347d4ccd1988c64db"
+  },
+  "chatroom_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3e7e47d4ccd1988c6266"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T05:11:21.841Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T05:11:21.841Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711ee109d688e6d40306ff0"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3fe747d4ccd1988c626e"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T05:11:44.520Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T05:11:44.520Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711ee1b9d688e6d40306ff6"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f6db347d4ccd1988c64db"
+  },
+  "chatroom_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3fe747d4ccd1988c626e"
+    },
+    {
+      "$oid": "670f6f3947d4ccd1988c6508"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T05:11:55.270Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T05:12:06.266Z"
+  },
+  "__v": 0,
+  "proposal_status": "sold"
+},
+{
+  "_id": {
+    "$oid": "6711ee759d688e6d4030704c"
+  },
+  "content": "I'm really interested in your item and would love to discuss a possible barter if you're open to it!",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f6db347d4ccd1988c64db"
+  },
+  "chatroom_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3e7e47d4ccd1988c6266"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T05:13:25.746Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T05:13:25.746Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711ef8b9d688e6d4030708a"
+  },
+  "content": "I'm really interested in your item and would love to discuss a possible barter if you're open to it!",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f6db347d4ccd1988c64db"
+  },
+  "chatroom_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3e7e47d4ccd1988c6266"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T05:18:03.984Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T05:18:03.984Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711efa19d688e6d403070bc"
+  },
+  "content": "hi",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "item_id": [],
+  "createdAt": {
+    "$date": "2024-10-18T05:18:25.102Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T05:18:25.102Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711efa79d688e6d403070c2"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "item_id": [
+    {
+      "$oid": "670f43c447d4ccd1988c627e"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T05:18:31.386Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T05:18:31.386Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711efb19d688e6d403070c8"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f6db347d4ccd1988c64db"
+  },
+  "chatroom_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "item_id": [
+    {
+      "$oid": "670f43c447d4ccd1988c627e"
+    },
+    {
+      "$oid": "670f6e9247d4ccd1988c64f8"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T05:18:41.348Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T05:18:47.667Z"
+  },
+  "__v": 0,
+  "proposal_status": "sold"
+},
+{
+  "_id": {
+    "$oid": "6711f4f4920a59279c85d5eb"
+  },
+  "content": "I'm really interested in your item and would love to discuss a possible barter if you're open to it!",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f6db347d4ccd1988c64db"
+  },
+  "chatroom_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3e7e47d4ccd1988c6266"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T05:41:08.142Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T05:41:08.142Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711f524920a59279c85d62b"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "item_id": [
+    {
+      "$oid": "670f435e47d4ccd1988c6276"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T05:41:56.011Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T05:41:56.011Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711f55c920a59279c85d631"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f6db347d4ccd1988c64db"
+  },
+  "chatroom_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "item_id": [
+    {
+      "$oid": "670f435e47d4ccd1988c6276"
+    },
+    {
+      "$oid": "670f6eeb47d4ccd1988c6500"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-18T05:42:52.042Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T05:43:00.024Z"
+  },
+  "__v": 0,
+  "proposal_status": "sold"
+},
+{
+  "_id": {
+    "$oid": "6712f69f920a59279c85d794"
+  },
+  "content": "I'm really interested in your item and would love to discuss a possible barter if you're open to it!",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f6db347d4ccd1988c64db"
+  },
+  "chatroom_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3e7e47d4ccd1988c6266"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-19T00:00:31.178Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-19T00:00:31.178Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6712f6bd920a59279c85d7ca"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3e7e47d4ccd1988c6266"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-19T00:01:01.519Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-19T00:01:01.519Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6712f6ca920a59279c85d7d0"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f6db347d4ccd1988c64db"
+  },
+  "chatroom_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "item_id": [
+    {
+      "$oid": "670f3e7e47d4ccd1988c6266"
+    },
+    {
+      "$oid": "670f6f8547d4ccd1988c6510"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-19T00:01:14.191Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-19T00:01:21.288Z"
+  },
+  "__v": 0,
+  "proposal_status": "sold"
+},
+{
+  "_id": {
+    "$oid": "6712f936920a59279c85d855"
+  },
+  "content": "I'm really interested in your item and would love to discuss a possible barter if you're open to it!",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f6db347d4ccd1988c64db"
+  },
+  "chatroom_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "item_id": [
+    {
+      "$oid": "6711c34b0b018b56bf3d9d6f"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-19T00:11:34.476Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-19T00:11:34.476Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6712f955920a59279c85d88b"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "chatroom_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "item_id": [
+    {
+      "$oid": "670f445f47d4ccd1988c6286"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-19T00:12:05.634Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-19T00:12:05.634Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6712f960920a59279c85d891"
+  },
+  "content": "",
+  "attachments": [],
+  "sender_id": {
+    "$oid": "670f6db347d4ccd1988c64db"
+  },
+  "chatroom_id": {
+    "$oid": "6711edf99d688e6d40306fba"
+  },
+  "item_id": [
+    {
+      "$oid": "670f445f47d4ccd1988c6286"
+    },
+    {
+      "$oid": "670f719747d4ccd1988c6535"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-19T00:12:16.717Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-19T00:12:23.424Z"
+  },
+  "__v": 0,
+  "proposal_status": "sold"
+}]

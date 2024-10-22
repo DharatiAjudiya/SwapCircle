@@ -1,0 +1,155 @@
+[{
+  "_id": {
+    "$oid": "670f475447d4ccd1988c62b2"
+  },
+  "role_id": {
+    "$oid": "66c49907eb55c06a0c807601"
+  },
+  "username": "Dharati",
+  "email": "ajudiyadharati@gmail.com",
+  "password": "$2b$10$tHzYCYcDkqu21b0SRFd4zuo.KCLE3yHigshqIGcooz41ZHuern3YK",
+  "phone_number": "426275849",
+  "address": "",
+  "location": null,
+  "points": 22,
+  "level": 0,
+  "badges": 0,
+  "average_rating": 4.285714285714286,
+  "createdAt": {
+    "$date": "2024-10-16T04:55:48.127Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-19T00:12:33.633Z"
+  },
+  "__v": 0,
+  "profile": "1729066338179_download.jpg"
+},
+{
+  "_id": {
+    "$oid": "670f492931cccfc946b1d1ae"
+  },
+  "role_id": {
+    "$oid": "66c49907eb55c06a0c807601"
+  },
+  "username": "smit",
+  "email": "smitkathiriya3082@gmail.com",
+  "password": "$2b$10$XXtlBSivIFwA/momSpaGv.5ECAMpcFGhBEzS.AddskLP7JZt2TpHK",
+  "phone_number": "411756034",
+  "address": "",
+  "location": null,
+  "points": 15,
+  "level": 0,
+  "badges": 0,
+  "average_rating": 5,
+  "createdAt": {
+    "$date": "2024-10-16T05:03:37.530Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-18T03:46:42.660Z"
+  },
+  "__v": 0,
+  "profile": "1729058518326_download (3).jpg"
+},
+{
+  "_id": {
+    "$oid": "670f5a6e47d4ccd1988c63ee"
+  },
+  "role_id": {
+    "$oid": "66c49907eb55c06a0c807601"
+  },
+  "username": "Senil",
+  "email": "senilkanani24@gmail.com",
+  "password": "$2b$10$ABhDnjCZVICO85bfmiqDRuIEfD2dZq7h4r6E/C5QzLqohWepWxH0q",
+  "phone_number": "426285987",
+  "address": "",
+  "location": null,
+  "points": 0,
+  "level": 0,
+  "badges": 0,
+  "average_rating": 0,
+  "createdAt": {
+    "$date": "2024-10-16T06:17:18.009Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-16T06:17:57.737Z"
+  },
+  "__v": 0,
+  "profile": "1729059477734_download (4).jpg"
+},
+{
+  "_id": {
+    "$oid": "670f66e547d4ccd1988c6473"
+  },
+  "role_id": {
+    "$oid": "66c49907eb55c06a0c807601"
+  },
+  "username": "Harshil",
+  "email": "harshildave822001@gmail.com",
+  "password": "$2b$10$akRkbQsCatPQny61oQMuKuWuXz7bsgPniaAwSi9zsq8pTSxYjFPsm",
+  "phone_number": "426859782",
+  "address": "",
+  "location": null,
+  "points": 0,
+  "level": 0,
+  "badges": 0,
+  "average_rating": 0,
+  "createdAt": {
+    "$date": "2024-10-16T07:10:29.816Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-16T07:11:04.154Z"
+  },
+  "__v": 0,
+  "profile": "1729062664151_download (2).jpg"
+},
+{
+  "_id": {
+    "$oid": "670f6db347d4ccd1988c64db"
+  },
+  "role_id": {
+    "$oid": "66c49907eb55c06a0c807601"
+  },
+  "username": "Harshil",
+  "email": "hpkrishna927@gmail.com",
+  "password": "$2b$10$jtlkmtpOrJ5a0Pnza7COFuDg9CJl3BFTUAuwKaxmQqIWupwpxXD6S",
+  "phone_number": "426897568",
+  "address": "",
+  "location": null,
+  "points": 10,
+  "level": 0,
+  "badges": 0,
+  "average_rating": 4.8,
+  "createdAt": {
+    "$date": "2024-10-16T07:39:31.320Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-19T00:12:28.172Z"
+  },
+  "__v": 0,
+  "profile": "1729064440327_download (1).jpg"
+},
+{
+  "_id": {
+    "$oid": "670f770247d4ccd1988c6600"
+  },
+  "role_id": {
+    "$oid": "66c4958b9a5c5286f4f827e0"
+  },
+  "username": "Admin",
+  "email": "admin@gmail.com",
+  "password": "$2b$10$utuV1SFl7oUGePukIB5pue8GHpd69ZKjXeHWP2Wj4X5UjtOUv1NOW",
+  "phone_number": "425879635",
+  "address": null,
+  "location": null,
+  "points": 0,
+  "level": 0,
+  "badges": 0,
+  "average_rating": 0,
+  "createdAt": {
+    "$date": "2024-10-16T08:19:14.349Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-16T08:19:14.349Z"
+  },
+  "__v": 0
+}]
