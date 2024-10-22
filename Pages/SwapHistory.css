@@ -1,0 +1,28 @@
+.swap-history-card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.swap-history-btn-container {
+  border: 3px dotted rgb(var(--color-black), 0.4);
+  border-left: none;
+  border-right: none;
+}
+
+@media (max-width: 767px) {
+  .swap-history-btn-container {
+    font-size: 0.5rem !important;
+  }
+
+  .swap-history-title {
+    font-size: 1rem !important;
+  }
+  
+  .swap-history-text {
+    font-size: 0.7rem !important;
+  }
+
+}

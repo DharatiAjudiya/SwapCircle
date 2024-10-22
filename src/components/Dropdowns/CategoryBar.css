@@ -1,0 +1,151 @@
+.custom-navbar {
+  /* background-color: rgb(var(--color-primary)); */
+  background-color: rgb(var(--color-jet-grey));
+  top: 68px;
+}
+
+.custom-navitem {
+  color: rgb(var(--color-black)) !important; /* Ensure the color is applied */
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+  z-index: 40; /* Ensure this value is higher than any overlapping component */
+}
+
+.custom-navitem:hover,
+.custom-navitem[aria-current="page"] {
+  color: rgb(var(--color-black));
+}
+
+.custom-navitem::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  bottom: -6px;
+  background-color: rgb(var(--color-black));
+  transition: width 0.3s ease, left 0.3s ease;
+  z-index: 1050; /* Ensure this is higher than any potential overlapping elements */
+}
+
+.custom-navitem:hover::after,
+.custom-navitem[aria-current="page"]::after {
+  width: 100%;
+  left: 0;
+}
+
+/* NavDropdown Styling */
+.custom-navitem .dropdown-toggle {
+  color: rgb(var(--color-black)) !important;
+  z-index: 1050; /* Ensure dropdown toggle is above other elements */
+}
+
+.custom-navitem .dropdown-menu {
+  color: rgb(var(--color-black));
+  z-index: 1060; /* Ensure dropdown menu is above the toggle and other elements */
+}
+
+/* Chevron Icon Rotation */
+.chevron-icon {
+  transition: transform 0.3s ease;
+}
+
+.chevron-icon.rotate {
+  transform: rotate(180deg);
+}
+
+.custom-navitem .dropdown-toggle::after {
+  display: none !important; /* Hide the default arrow icon */
+}
+
+.category-dropdown-container {
+  display: flex;
+  position: relative;
+  align-content: center;
+  align-items: center;
+  z-index: 1050; /* Ensure this value is higher than any overlapping component */
+}
+
+.category-dropdown .dropdown-menu {
+  background-color: rgb(var(--color-primary)); /* Adjust to match your theme */
+  color: rgb(var(--color-black)); /* Adjust to match your theme */
+  z-index: 1060; /* Ensure this is higher than the container's z-index */
+}
+
+.category-dropdown .dropdown-menu .dropdown-divider {
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+.category-dropdown .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -10px;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #f8f9fa; /* Light background for dropdown arrow */
+  z-index: 26090; /* Ensure this value is higher than any overlapping component */
+}
+
+.category-dropdown .dropdown-header {
+  background-color: rgb(var(--color-primary)); /* Same as above */
+  border-bottom: 1px solid rgb(var(--color-primary)); /* Optional border for separation */
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+}
+
+.category-dropdown .dropdown-header span {
+  color: rgb(
+    var(--color-black)
+  ); /* Ensure text color is appropriate for dark background */
+}
+
+.category-dropdown {
+  position: absolute;
+  left: 24px;
+  bottom: -24px;
+  transform-origin: top right;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: 1070; /* Ensure this is higher than the menu's z-index */
+}
+
+.slide-in-up {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-out-down {
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.down-arrow {
+  margin-right: 5px;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.banner-btn {
+  border-radius: 50px;
+  height: 50px;
+  width: max-content;
+  background-color: rgb(var(--color-priamary));
+  border-color: rgb(var(--color-priamary));
+  color: rgb(var(--color-primary));
+
+  &:hover {
+    background-color: rgb(var(--color-black));
+    border-color: rgb(var(--color-black));
+    color: rgb(var(--color-primary));
+  }
+}

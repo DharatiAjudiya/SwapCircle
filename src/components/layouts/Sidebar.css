@@ -1,0 +1,225 @@
+/* .sidebar {
+  background: rgb(var(--color-black));
+
+  background: linear-gradient(
+    90deg,
+    rgb(var(--color-black)) 0%,
+    rgb(var(--color-black)) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    rgb(var(--color-black)) 0%,
+    rgb(var(--color-black)) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(var(--color-black)) 0%,
+    rgb(var(--color-black)) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=rgb(var(--color-black)), endColorstr=rgb(var(--color-black)), GradientType=1 );
+
+  border-radius: 0px 40px 0px 40px;
+  width: 20em;
+  max-height: 100vh;
+}
+
+.nav-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+.nav-item-container .nav-item {
+  margin: 0;
+  padding: 0.5rem;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: none;
+  border: 1px solid transparent;
+  transition: background 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.nav-item-container .nav-item:hover,
+.nav-item-container .active {
+  background: rgba(255, 255, 255, 0.09) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.24) !important;
+}
+
+.profile-container {
+  font-family: "Clash Display", sans-serif;
+  color: rgb(var(--color-primary));
+  padding: 0.4rem;
+  background: transparent;
+  border-radius: 1rem;
+  box-shadow: none;
+  border: 1px solid transparent;
+  transition: background 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+}
+
+.profile-container .profile-pic {
+  border: 5px solid rgba(var(--color-primary), 0.357);
+  border-radius: 50%;
+}
+
+.profile-container .profile-name {
+  font-size: 1.1rem;
+}
+
+@media (width>= 768px) {
+  .offcanvas-backdrop {
+    display: none !important;
+  }
+}
+
+.offcanvas-close-white .btn-close {
+  filter: invert(1);
+}
+
+
+@media (max-width: 768px) {
+  .offcanvas.sidebar {
+    width: 70%;
+  }
+
+  .offcanvas.sidebar .offcanvas-body {
+    overflow-y: auto;
+  }
+} */
+
+
+.sidebar {
+  width: 250px;
+  color: #ffffff;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  background: rgb(var(--color-black));
+
+  background: linear-gradient(
+    90deg,
+    rgb(var(--color-black)) 0%,
+    rgb(var(--color-black)) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    rgb(var(--color-black)) 0%,
+    rgb(var(--color-black)) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(var(--color-black)) 0%,
+    rgb(var(--color-black)) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=rgb(var(--color-black)), endColorstr=rgb(var(--color-black)), GradientType=1 );
+
+  border-radius: 0px 60px 20px 0px;
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar-logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px; /* Add space between the image and the text */
+}
+
+.sidebar-logo-text span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sidebar-logo-text small {
+  font-size: 12px;
+  color: #a9a9a9;
+}
+
+.sidebar-nav .nav-link {
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 8px;
+  margin-bottom: 10px;
+}
+
+.sidebar-nav .nav-link:hover {
+  background-color: #333333;
+  border-radius: 10px;
+}
+
+.sidebar-nav .nav-link.active {
+  background-color: #333333;
+  border-radius: 10px;
+}
+
+.sidebar-nav i {
+  margin-right: 10px;
+}
+
+.sidebar-nav .badge {
+  background-color: #39d353;
+  color: white;
+  font-size: 12px;
+  padding: 3px 7px;
+  border-radius: 50%;
+  float: right;
+}
+
+.sidebar-footer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  align-content: end;
+  border-top: 1px solid #333333;
+  padding-top: 15px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  margin-right: 10px; /* Add space between image and text */
+}
+
+.profile-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  align-content: start;
+}
+
+.profile-info span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.profile-info small {
+  display: block;
+  color: #a9a9a9;
+}
+
+.icon-settings {
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}

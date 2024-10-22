@@ -1,0 +1,117 @@
+.edit-profile-form input,
+.edit-profile-form button {
+  margin-bottom: 1rem;
+  border-radius: 0%;
+}
+
+.form-floating label {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+}
+.form-floating > .form-control-plaintext ~ label::after,
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-select ~ label::after {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+}
+
+/* Autofill Styles for WebKit Browsers */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: rgb(var(--color-black)); /* Text color */
+  -webkit-box-shadow: 0 0 0px 1000px rgba(var(--color-primary), 0.22) inset; /* Background color */
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.image-box-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgb(var(--color-primary));
+  border: 2px solid rgb(var(--color-platinum));
+  cursor: pointer;
+}
+
+.image-box-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-box-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.image-box-file-input {
+  display: none;
+}
+
+.image-box-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+}
+
+.image-box-container:hover .image-box-overlay {
+  opacity: 1;
+}
+
+.image-box-icon {
+  font-size: 24px;
+}
+
+.password-save-btn,
+.password-save-btn:hover {
+  border-radius: 0;
+  font-weight: 500;
+  border: 1px solid rgb(var(--color-black));
+  background-color: rgb(var(--color-black));
+  color: rgb(var(--color-primary));
+}
+
+.discard-btn,
+.discard-btn:hover {
+  border-radius: 0;
+  font-weight: 500;
+  border: 1px solid rgb(var(--color-black));
+  background-color: rgb(var(--color-black));
+  color: rgb(var(--color-primary));
+}
+
+.password-change-input {
+  position: relative;
+}
+
+.password-change-input button {
+  position: absolute;
+  margin: 0;
+  top: 16px;
+  right: 4px;
+}

@@ -1,0 +1,141 @@
+.leader-card {
+  background-color: rgb(var(--color-primary)) !important;
+  border: none;
+  width: 250px;
+  border-radius: 20px;
+  padding: 20px 0px;
+  color: rgb(var(--color-black));
+  transform: translateY(-25px);
+  position: relative;
+}
+
+.main-card {
+  background-color: #20233b;
+  transform: scale(1.2);
+  margin-top: -40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.main-score {
+  font-size: 32px;
+}
+
+.lower-card {
+  margin-top: 20px;
+}
+
+.leader-card .rounded-circle {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.image-box {
+  position: absolute;
+  top: -20%;
+  left: 30%;
+}
+
+.badge-circle {
+  position: absolute;
+  bottom: 0;
+  right: 35%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.score {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Shadows and spacing for more prominence */
+.leader-card {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.288);
+}
+
+.description .card-text {
+  font-size: 0.8rem;
+}
+
+.description > .card-text {
+  margin-bottom: 2px;
+}
+
+.profile-card-title:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.profile-card-title {
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: text-decoration-thickness 0.3s ease-in-out,
+    text-underline-offset 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.badge-img {
+  object-fit: contain;
+  height: 100px;
+  width: 100px;
+}
+
+.topUser-container {
+  padding-top: 7rem;
+  gap: 3rem;
+}
+
+@media (max-width: 991px) {
+  .leader-card {
+    width: 180px;
+  }
+
+  .image-box {
+    top: -15%;
+    left: 27%;
+  }
+
+  .leader-card .rounded-circle {
+    width: 85px;
+    height: 85px;
+  }
+
+  .badge-circle {
+    width: 25px;
+    height: 25px;
+  }
+
+  .profile-card-title {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+
+  .badge-img {
+    height: 70px;
+    width: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .leader-card {
+    margin-top: 100px;
+  }
+
+  .main-card {
+    margin-top: 0px !important;
+  }
+
+  .topUser-container {
+    padding-top: 0;
+    gap: 5rem;
+  }
+}

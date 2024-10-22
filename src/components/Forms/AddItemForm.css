@@ -1,0 +1,151 @@
+/* ImageUpload.css */
+.image-upload-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-preview-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-wrapper {
+  position: relative;
+  margin: 5px;
+  width: 6rem;
+  height: 6rem;
+}
+
+.image-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.remove-icon {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  color: rgb(var(--color-primary));
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.add-photo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  background-color: #f0f0f0;
+  border: 1px dashed #ccc;
+  cursor: pointer;
+}
+
+.add-photo-text {
+  font-size: 12px;
+  color: #888;
+}
+
+.add-photo-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.sidebar-form {
+  border-right: 1px solid #ccc;
+  padding: 1rem 3rem;
+  height: 120vh;
+  overflow-y: auto;
+}
+.sidebar-form .form-label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.page-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+/* Custom CSS for Switch */
+.custom-switch .form-check-input {
+  background-color: rgb(
+    var(--color-primary)
+  ); /* Black background for the switch when active */
+  border-color: rgb(
+    var(--color-black)
+  ); /* Black border for the switch when active */
+}
+
+.custom-switch .form-check-input:checked {
+  background-color: rgb(
+    var(--color-black)
+  ); /* Black background when the switch is checked */
+}
+
+.custom-switch .form-check-input:focus {
+  box-shadow: none; /* Remove default focus shadow */
+}
+
+.custom-switch .form-check-input::before {
+  background-color: rgb(var(--color-primary)); /* Thumb color */
+  border-color: rgb(var(--color-primary));
+}
+
+.custom-switch .form-check-input:checked::before {
+  background-color: rgb(var(--color-primary)); /* Thumb color when checked */
+  border-color: rgb(var(--color-primary));
+}
+
+.form-control,
+.form-select,
+.submit-btn {
+  margin-bottom: 1rem !important;
+  border-radius: 0% !important;
+}
+
+.submit-btn,
+.submit-btn:is(:hover, :active, :focus, :focus-visible) {
+  background-color: rgb(var(--color-black)) !important;
+}
+/* Style the select options on hover */
+.form-select option:is(:hover, :focus, :active) {
+  background-color: black !important; /* Background color on hover */
+  color: white !important; /* Text color on hover */
+}
+
+.geocoder-container .geoapify-autocomplete-input {
+  width: 100% !important;
+  padding: 0 2.5rem;
+}
+
+.autocomplete-container {
+  z-index: 1000; /* Ensures that the autocomplete suggestions appear above the map */
+  position: relative;
+}
+
+.autocomplete-container .geoapify-autocomplete-list {
+  z-index: 1001; /* Ensures that the suggestions list appears on top */
+  position: relative;
+}
+
+.invalid-message {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: var(--bs-form-invalid-color);
+}
+
+.reset-btn,
+.reset-btn:hover {
+  border-radius: 0;
+  font-weight: 500;
+  border: 1px solid rgb(var(--color-black));
+  background-color: rgb(var(--color-primary));
+  color: rgb(var(--color-black));
+}

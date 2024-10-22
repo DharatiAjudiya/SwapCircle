@@ -1,0 +1,67 @@
+.attach-dropdown-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+/* .attach-dropdown .dropdown-menu {
+  z-index: 26060; 
+} */
+
+.attach-dropdown .dropdown-header {
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+}
+
+.attach-dropdown .dropdown-menu {
+  width: 12rem;
+}
+
+.attach-dropdown .dropdown-header span {
+  font-family: "Clash Display", sans-serif;
+  font-size: larger;
+}
+
+.attach-dropdown {
+  position: absolute;
+  top: -10rem;
+  left: 1rem;
+  z-index: 11;
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.slide-in-up {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-out-down {
+  transform: translateY(-260px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Hide the dropdown arrow */
+.custom-dropdown::after {
+  display: none;
+}
+
+.attachment-button {
+  position: absolute;
+  left: 2px;
+  top: -17px;
+  border-radius: 50px;
+  height: 2.1rem;
+  width: 2.1rem;
+  border: 1px solid #fff;
+  padding: 0;
+  background-color: #fff;
+  color: white;
+}
+
+.attachment-button:is(:hover, :focus-visible, :active) {
+  border: 1px solid #fff !important;
+  background-color: #fff !important;
+}

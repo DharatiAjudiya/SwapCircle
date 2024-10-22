@@ -1,0 +1,145 @@
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.edit-profile-container {
+  margin-top: 10px;
+  width: 100%;
+  max-height: 73vh;
+  min-height: 73vh;
+  overflow-y: auto;
+}
+
+.tab-container .nav-link.active {
+  background-color: rgb(var(--color-black));
+  color: rgb(var(--color-primary));
+}
+
+.tab-container .nav-link {
+  color: inherit; /* Keep inactive tabs with default color */
+  border-radius: 0;
+}
+
+/* Define slide animations */
+.slide-enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 500ms ease, opacity 500ms ease;
+}
+
+.slide-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 500ms ease, opacity 500ms ease;
+}
+
+/* Tab container */
+.tab-container .nav-tabs .nav-item .nav-link {
+  background-color: #f8f9fa;
+  color: #000;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Neon glow effect */
+.tab-container .nav-tabs .nav-item .nav-link.active {
+  background-color: black;
+  color: white;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Liquid wave effect */
+.tab-container .nav-tabs .nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300%;
+  height: 100%;
+  background: radial-gradient(circle at center, black 30%, transparent 70%);
+  transition: left 0.7s ease;
+  z-index: 0;
+}
+
+/* The wave moves in when active */
+.tab-container .nav-tabs .nav-item .nav-link.active::before {
+  left: 0;
+  transition: left 0.7s ease;
+}
+
+/* Wave moves out when inactive */
+.tab-container .nav-tabs .nav-item .nav-link:not(.active)::before {
+  left: 100%;
+}
+
+/* Neon glow fades in/out */
+.tab-container .nav-tabs .nav-item .nav-link.active {
+  animation: glowEffect 1.5s infinite alternate;
+}
+
+@keyframes glowEffect {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
+
+/* Ripple effect on click */
+.tab-container .nav-tabs .nav-item .nav-link:active::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background: rgba(0, 0, 0, 0.999);
+  border-radius: 50%;
+  animation: rippleEffect 0.3s ease-out;
+}
+
+@keyframes rippleEffect {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+
+@media (min-width : 0px) and (max-width : 576px) {
+  
+}
